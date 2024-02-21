@@ -5,9 +5,16 @@ pipeline {
   }
   stages {
     stage('Build') {
+      steps {
+        echo ‘ Working with multibranch pipelines’
       }
     }
+    stage (‘ Proving’){
+	Steps {
+		Echo ‘ Proving changes in my Jenkinsfile’
   }
+}
+}
   post {
     always {
         junit(
@@ -17,4 +24,23 @@ pipeline {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 
