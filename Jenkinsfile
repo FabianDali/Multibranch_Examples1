@@ -9,7 +9,7 @@ pipeline {
         echo ‘ Working with multibranch pipelines’
       }
     }
-    stage (‘ Proving’){
+    stage (‘Proving’){
 	Steps {
 		Echo ‘ Proving changes in my Jenkinsfile’
   }
@@ -23,7 +23,32 @@ pipeline {
         )
     }
   }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
