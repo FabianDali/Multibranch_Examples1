@@ -6,20 +6,20 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo ‘ Working with multibranch pipelines’
+        echo 'Working with multibranch pipelines'
       }
     }
-    stage (‘Proving’) {
+    stage ('Proving') {
 	    steps {
-		     echo ‘ Proving changes in my Jenkinsfile’
+		     echo 'Proving changes in my Jenkinsfile'
       }
     }
-    stage (‘cat README’) {
+    stage ('cat README') {
       when  {
-            branch  “ fix-123”
+            branch  "fix-*"
       }
       steps  {
-          bat ‘’’ cat README.md ‘’’ 
+          bat '''cat README.md '''
       }
     }
   }
@@ -32,6 +32,39 @@ pipeline {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
