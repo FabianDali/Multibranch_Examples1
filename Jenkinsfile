@@ -19,7 +19,7 @@ pipeline {
             branch  "fix-*"
       }
       steps  {
-          bat '''Get-Content README.md '''
+          bat '''type README.md '''
       }
     }
   }
@@ -32,6 +32,40 @@ pipeline {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
