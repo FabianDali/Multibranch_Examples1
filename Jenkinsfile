@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'echo./gradlew clean check --no-daemon'
+        echo 'gradlew clean check --no-daemon'
       }
     }
   }
