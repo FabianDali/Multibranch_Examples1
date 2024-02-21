@@ -10,11 +10,19 @@ pipeline {
       }
     }
     stage (‘Proving’) {
-	Steps {
-		Echo ‘ Proving changes in my Jenkinsfile’
+	    steps {
+		     echo ‘ Proving changes in my Jenkinsfile’
+      }
+    }
+    stage (‘cat README’) {
+      when  {
+            branch  “ fix-123”
+      }
+      steps  {
+          bat ‘’’ cat README.md ‘’’ 
+      }
+    }
   }
-}
-}
   post {
     always {
         junit(
@@ -24,6 +32,65 @@ pipeline {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
